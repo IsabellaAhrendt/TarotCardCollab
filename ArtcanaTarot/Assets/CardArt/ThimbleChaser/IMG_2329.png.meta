@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: afcdbf422c4a5174d933cf7b70e95973
+guid: eea9e7bbe25ccb0418a762f42c2ae3d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4513354717743139087
-    second: Card frame recolorize_0
+      213: -1246068839235029145
+    second: IMG_2329_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Card frame recolorize_0
+      name: IMG_2329_0
       rect:
         serializedVersion: 2
-        x: 107
-        y: 106
-        width: 785
-        height: 1194
+        x: 0
+        y: 0
+        width: 1000
+        height: 1400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f09c968f338a2ae30800000000000000
-      internalID: 4513354717743139087
+      spriteID: 76776bf1ef215bee0800000000000000
+      internalID: -1246068839235029145
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Card frame recolorize_0: 4513354717743139087
+      IMG_2329_0: -1246068839235029145
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
