@@ -170,7 +170,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_MaskInteraction: 1
   m_Sprite: {fileID: 21300000, guid: 01f6f31dd3ecb2745af4bb7ed65b9655, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -283,6 +283,7 @@ GameObject:
   m_Component:
   - component: {fileID: 867426006712306314}
   - component: {fileID: 206730583043807046}
+  - component: {fileID: 8020558863134704444}
   m_Layer: 0
   m_Name: svartcrow
   m_TagString: Untagged
@@ -333,6 +334,28 @@ MonoBehaviour:
   invertY: 1
   returnOnRelease: 1
   returnSpeed: 6
+--- !u!95 &8020558863134704444
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3124317996993054803}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 400446344eaf2904d8773c8b4b473894, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3273900170696797143
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,7 +526,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 1
   m_Sprite: {fileID: -8853821836847613757, guid: 92d5671ec364da0499694c90aa41e7ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
