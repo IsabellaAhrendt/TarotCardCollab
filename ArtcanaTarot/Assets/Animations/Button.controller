@@ -1502,7 +1502,14 @@ AnimationClip:
     flags: 0
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: TriggerAnimationEvent
+    data: hover
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
 --- !u!1101 &-1453688805799098702
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

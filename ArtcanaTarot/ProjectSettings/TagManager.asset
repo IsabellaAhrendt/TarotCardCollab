@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Wipe
   - Cameras
+  - audioManager
   layers:
   - Default
   - TransparentFX
