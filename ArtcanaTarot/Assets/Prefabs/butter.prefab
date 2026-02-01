@@ -1763,6 +1763,8 @@ MonoBehaviour:
   invertY: 1
   returnOnRelease: 1
   returnSpeed: 6
+  particlePrefab: {fileID: 0}
+  zOffset: -2
 --- !u!95 &7380322818962855969
 Animator:
   serializedVersion: 7

@@ -20,9 +20,14 @@ public class CardDragRotate : MonoBehaviour
     public bool returnOnRelease = true;
     public float returnSpeed = 6f;
 
+    [Header("Particle Effect")]
+    public GameObject particlePrefab;
+    public float zOffset = -1f;
+
     Quaternion startRotation;
     Vector2 currentInput;
     bool dragging;
+    bool clicked;
 
     void Start()
     {
@@ -43,6 +48,35 @@ public class CardDragRotate : MonoBehaviour
 
             currentInput.x += mx;
             currentInput.y -= my;
+
+            if (!clicked)
+            {
+                clicked = true;
+
+                if (particlePrefab != null)
+                {
+                    Vector3 mousePos = Input.mousePosition;
+                    mousePos.z = Mathf.Abs(Camera.main.transform.position.z);
+
+                    Vector3 worldPos = Camera.main.ScreenToWorldPoint(mousePos);
+
+                    GameObject particle = Instantiate
+
+                        (
+                        particlePrefab,
+                        worldPos,
+                        Quaternion.identity,
+                        transform
+                        );
+
+
+                    Vector3 localPos = particle.transform.localPosition;
+                    localPos.z = zOffset;
+                    particle.transform.localPosition = localPos;
+                }
+
+            }
+
         }
         else if (returnOnRelease)
         {
@@ -51,6 +85,8 @@ public class CardDragRotate : MonoBehaviour
                 Vector2.zero,
                 Time.deltaTime * returnSpeed
             );
+
+            clicked = false;
         }
 
         // Clamp rotation
